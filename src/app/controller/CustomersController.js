@@ -1,12 +1,11 @@
+let customers = [
+    { id: 1, name: "Renan Simas", idade: 20, info: ""},
+    {id: 2, name: "Alexandre Fernandes", idade: "22", info: ""},
+    {id: 3, name: "Camila Soares", idade: "22", info:""},
+    {id: 4, name: "Guilherme Damasceno", idade:"23", info: ""}
+];
+
 class CustomersControllers {
-    Constructor() {
-        let customers = [
-            { id: 1, name: "Renan Simas", idade: 20, info: ""},
-            {id: 2, name: "Alexandre Fernandes", idade: "22", info: ""},
-            {id: 3, name: "Camila Soares", idade: "22", info:""},
-            {id: 4, name: "Guilherme Damasceno", idade:"23", info: ""}
-        ];
-    }
 
     //LISTAGEM DOS REGISTROS
     index(req, res){
@@ -58,5 +57,6 @@ class CustomersControllers {
     };
 
     return res.status(status).json(); 
-    }
+    }    
 }
+export default new CustomersControllers();
